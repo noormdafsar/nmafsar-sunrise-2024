@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { getActiveTasks, getCompletedTasks, getAllTasks, completeTask, createTask, updateTask, deleteTask } from "@/modules/taskManager";
 import Task from "@/model/Task";
 
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Task[] | Task | { message: string }>
